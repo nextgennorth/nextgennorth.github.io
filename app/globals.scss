@@ -1,0 +1,114 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --color-gray-border: #5C5D6D;
+  --color-gray-custom: #D9D9DE;
+  --color-white-custom: #F7F7F8;
+  --color-orange-custom: #FF750C;
+  --color-gradient-orange: linear-gradient(0deg, rgba(0, 0, 0, 0) 30%, rgba(255, 117, 12, 1) 100%);
+  --color-gradient-orange-right: linear-gradient(to top right, rgba(0, 0, 0, 0) 50%, rgba(255, 117, 12, 1) 100%);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: #0E0E11;
+  color: var(--color-white-custom);
+  font-family: var(--font-helveticaneue) !important;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-LeagueGothic) !important;
+}
+
+header a {
+  font-family: var(--font-LeagueGothic) !important;
+}
+
+#main-img-hero {
+  background: url("/img/lines-header.png") no-repeat left bottom;
+  background-position-x: -120px;
+  background-position-y: 155px;
+}
+
+div[role="tablist"] {
+  justify-content: center;
+  gap: 10px;
+
+  .bg-cyan-600[aria-selected="true"] {
+    background-color: var(--color-orange-custom) !important;
+font-size: 16px;
+    &:focus {
+      box-shadow: none !important;
+    }
+
+  }
+
+  button[aria-selected="false"] {
+    border: 1px solid var(--color-gray-border);
+    transition: all ease-in 0.2s;
+    font-size: 16px;
+    color: #FFF;
+    &:hover{
+      background: rgba(255,255,255,0.3) !important;
+      transition: all ease-in 0.2s;
+    }
+    &:focus {
+      box-shadow: none !important;
+    }
+
+  }
+}
+
+.item-top-episode {
+  position: relative;
+  overflow: hidden;
+  transition: all 0.2s ease-in;
+}
+
+.item-top-episode:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: var(--color-gradient-orange);
+  opacity: 0;
+  transition: opacity 0.2s ease-in;
+  z-index: -1;
+}
+
+.item-top-episode:hover::before {
+  opacity: 1;
+}
+.explore-item{
+  position: relative;
+  transition: all 0.2s ease-in;
+  overflow: hidden;
+}
+.explore-item:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: var(--color-gradient-orange-right);
+  opacity: 0;
+  transition: opacity 0.2s ease-in;
+  z-index: -1;
+}
+
+.explore-item:hover::before {
+  opacity: 1;
+}
