@@ -18,23 +18,23 @@ const geistMono = localFont({
 export const metadata: Metadata = {
   title: "NextGenNorth",
   description: "NextGenNorth website",
-  metadataBase: new URL("https://nextgennorth.au"),
+  metadataBase: new URL("https://nextgennorth-github-io.vercel.app"),
   keywords: ['NextGenNorth', 'nextgen','next gen north'],
-  authors: [{ name: 'NextGenNorth', url: 'https://nextgennorth.au' }],
+  authors: [{ name: 'NextGenNorth', url: 'https://nextgennorth-github-io.vercel.app/' }],
   openGraph: {
     siteName: 'NextGenNorth',
     title: "NextGenNorth",
     description: "NextGenNorth website",
-    url: 'https://nextgennorth.au',
+    url: 'https://nextgennorth-github-io.vercel.app',
     type: "website",
-    images: 'https://nextgennorth.org/img/nextgen-thumbnail.png',
+    images: 'https://nextgennorth-github-io.vercel.app/img/nextgen-thumbnail.png',
   },
   twitter: {
-    site: "https://nextgennorth.au",
+    site: "https://nextgennorth-github-io.vercel.app",
     card: "summary_large_image",
     title: "NextGenNorth",
     description: "NextGenNorth website",
-    images: "https://nextgennorth.au/img/nextgen-thumbnail.png"
+    images: "https://nextgennorth-github-io.vercel.app/img/nextgen-thumbnail.png"
   },
   // icons: {
   //   icon: [
