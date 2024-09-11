@@ -152,7 +152,7 @@ export const indexCopy = {
     },
     PioneerNT: {
         title: "UNLOCK THE FUTURE OF THE <br/>NORTHERN TERRITORY",
-        description_1: `CWant to know how the Northern Territory is nurturing its next wave of leaders, innovators, and changemakers? The NextGen North Whitepaper takes you behind the scenes of the podcast shaping the NT's future. Gain exclusive insights into the local entrepreneurial landscape, discover groundbreaking projects, and learn how youth-led innovation is driving lasting, meaningful change across the region.`,
+        description_1: `Want to know how the Northern Territory is nurturing its next wave of leaders, innovators, and changemakers? The NextGen North Whitepaper takes you behind the scenes of the podcast shaping the NT's future. Gain exclusive insights into the local entrepreneurial landscape, discover groundbreaking projects, and learn how youth-led innovation is driving lasting, meaningful change across the region.`,
 
         description_2: `<br><br>What You’ll Discover Inside:
                         <ul className="list-disc mt-4 ml-5 text-base">
