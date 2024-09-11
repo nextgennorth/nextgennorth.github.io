@@ -1,6 +1,7 @@
 import Image from "next/image";
-import { footer } from "../copy/footer";
+import { footerCopy } from "../copy/footer";
 import Link from "next/link";
+import { headerCopy } from "../copy/header";
 
 export default function Footer() {
     return (
@@ -18,7 +19,7 @@ export default function Footer() {
                         <div>
                             <h2 className="mb-6 text-[30px]">Website map</h2>
                             <ul className="text-gray-500 dark:text-gray-400 font-medium">
-                                {footer["website-map"].map((item, index) => (    
+                                {footerCopy["website-map"].map((item, index) => (    
                                     <li key={index} className="mb-4">
                                         <Link href={item.path} className="hover:underline text-[20px]">{item.title}</Link>
                                     </li>
@@ -30,19 +31,19 @@ export default function Footer() {
                             <h2 className="mb-6 text-[30px]">CONTACT US</h2>
                             <ul className="text-gray-500 dark:text-gray-400 font-medium">
                                 <li className="mb-4">
-                                    <span className=" text-[20px]">{footer["contactus"].email}</span>
+                                    <span className=" text-[20px]">{footerCopy["contactus"].email}</span>
                                 </li>
                                 <li>
-                                    <span className="text-[20px]">{footer["contactus"].mobile}</span>
+                                    <span className="text-[20px]">{footerCopy["contactus"].mobile}</span>
                                 </li>
                                 <li>
-                                    <span className="text-[20px]">{footer["contactus"].address}</span>
+                                    <span className="text-[20px]">{footerCopy["contactus"].address}</span>
                                 </li>
                             </ul>
                         </div>
                         <div>
                             <ul className="text-gray-500 dark:text-gray-400 font-medium flex">
-                                {footer.socialMedia.map((item, index) => (
+                                {headerCopy.socialMedia.map((item, index) => (
                                     <li key={index} className="mb-4">
                                         <Link href={item.path} className="hover:underline" >
                                             <Image src={item.icon} width={24} height={24} className="mr-3 !w-[24px] !h-[24px] sm:h-9 object-contain" alt={item.title} />
