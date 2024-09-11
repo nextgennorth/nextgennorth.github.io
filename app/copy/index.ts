@@ -152,16 +152,13 @@ export const indexCopy = {
     },
     PioneerNT: {
         title: "UNLOCK THE FUTURE OF THE <br/>NORTHERN TERRITORY",
-        description_1: `Want to know how the Northern Territory is nurturing its next wave of leaders, innovators, and changemakers? The NextGen North Whitepaper takes you behind the scenes of the podcast shaping the NT's future. Gain exclusive insights into the local entrepreneurial landscape, discover groundbreaking projects, and learn how youth-led innovation is driving lasting, meaningful change across the region.`,
+        description_1: `Curious about how the Northern Territory is fostering the next generation of leaders, innovators, and changemakers? Our NextGen North Whitepaper dives deep into the vision, mission, and strategic goals behind the podcast that’s shaping the future of the NT. This comprehensive guide offers insights into the local entrepreneurial ecosystem, highlights key projects, and outlines how youth-driven innovation is creating lasting impact across the region.
+        <br><br>`,
 
-        description_2: `<br><br>What You’ll Discover Inside:
-                        <ul className="list-disc mt-4 ml-5 text-base">
-                            <li>Our bold mission to inspire and empower the next generation</li>
-                            <li>In-depth interviews and success stories from Northern Territory's trailblazers</li>
-                            <li>Opportunities for strategic partnerships and sponsorship</li>
-                            <li>Practical ways to get involved and help shape the NT’s future</li>
-                        </ul>`
-        ,
+        description_2: {title:"What You’ll Discover Inside:",items:["Our bold mission to inspire and empower the next generation",
+            "In-depth interviews and success stories from Northern Territory's trailblazers",
+            "Opportunities for strategic partnerships and sponsorship", "Practical ways to get involved and help shape the NT’s future"]},
+
         description_3: `Whether you're an entrepreneur, student, or community leader, the NextGen North Whitepaper is packed with actionable insights to drive meaningful change. Join the conversation and discover how we can collaboratively build a thriving, sustainable future for the Northern Territory.`,
 
         witepaper: "Download the Whitepaper Now",

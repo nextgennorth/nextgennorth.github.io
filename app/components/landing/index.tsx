@@ -160,11 +160,18 @@ export default function Sections() {
                 <section className="container mx-auto py-12  rounded-lg px-4 lg:px-0 relative" id="whitepaper">
                     <div className="flex flex-col lg:flex-row justify-between items-start">
                         <div className="lg:w-[50%] mb-4">
-                            <h3 className="text-[80px] " dangerouslySetInnerHTML={{ __html: indexCopy.PioneerNT.title }} style={{ lineHeight: "75px" }}></h3>
 
+                            <h3 className="text-[80px] " dangerouslySetInnerHTML={{ __html: indexCopy.PioneerNT.title }} style={{ lineHeight: "75px" }}></h3>
                             <p className="mt-4 text-base" dangerouslySetInnerHTML={{ __html: indexCopy.PioneerNT.description_1 }}>
                             </p>
-                            <div dangerouslySetInnerHTML={{ __html: indexCopy.PioneerNT.description_2 }}></div>
+                            <p className="text-base">{indexCopy.PioneerNT.description_2.title}</p>
+                            <ul className="list-disc mt-4 ml-5 text-base">
+                                {
+                                    indexCopy.PioneerNT.description_2.items.map((item, index) => (
+                                        <li key={index}>{item}</li>
+                                    ))
+                                }
+                            </ul>
                             <p className="mt-4 text-base" dangerouslySetInnerHTML={{ __html: indexCopy.PioneerNT.description_3 }}>
                             </p>
 
