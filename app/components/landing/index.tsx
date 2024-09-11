@@ -14,7 +14,7 @@ export default function Sections() {
             <section className="container mx-auto lg:py-16 flex flex-col-reverse lg:flex-row  justify-between items-center">
                 <div className="p-4">
                     <p className="text-xl">{indexCopy.heroSection.tilte}</p>
-                    <h2 className="lg:text-[120px] text-[60px]" dangerouslySetInnerHTML={{ __html: indexCopy.heroSection.slogan }}></h2>
+                    <h2 className="lg:text-[120px] text-[60px]" dangerouslySetInnerHTML={{ __html: indexCopy.heroSection.slogan }} style={{lineHeight:"122px"}}></h2>
                     <p className="mt-4 text-lg">{indexCopy.heroSection.subtitle}</p>
                     <button className="mt-6 px-6 py-3 flex items-center border border-[var(--color-orange-custom)] text-white  rounded-lg">
                         {indexCopy.heroSection.startButton.text}
@@ -49,7 +49,7 @@ export default function Sections() {
 
                     {
                         indexCopy.top_episode.items.map((item, index) => (
-                            <div className="border item-top-episode flex lg:flex-col md:flex-row flex-wrap border-[var(--color-gray-border)] p-6 rounded-lg lg:w-[320px] w-full">
+                            <div key={index} className="border item-top-episode flex lg:flex-col md:flex-row flex-wrap border-[var(--color-gray-border)] p-6 rounded-lg lg:w-[320px] w-full">
                                 <img src={item.image} alt={item.title} width={280} height={153} className="rounded-lg mb-4" />
                                 <div className="ml-3 lg:ml-0">
                                     <p className="mt-2 text-base">{item.title}</p>
@@ -71,11 +71,11 @@ export default function Sections() {
                     <Tabs aria-label="Pills" variant="pills">
                         {
                             indexCopy.podcasts.categories.map((item, index) => (
-                                <Tabs.Item active title={item} className="px-4 py-2 bg-orange-500 rounded-lg">
+                                <Tabs.Item active key={index} title={item} className="px-4 py-2 bg-orange-500 rounded-lg">
                                     <div className="w-full grid grid-cols-1 lg:grid-cols-3 md:grid-col md:grid-cols-2 gap-8 mt-8 items-start" id="all">
                                         {
                                             indexCopy.podcasts.contents.filter(subitem => subitem.categories.includes(item)).map((subitem, idx) => (
-                                                <div className="border border-[var(--color-gray-border)] p-3 rounded-xl flex items-start explore-item">
+                                                <div key={idx} className="border border-[var(--color-gray-border)] p-3 rounded-xl flex items-start explore-item">
                                                     <img src={subitem.Image} alt="Episode 1" width={125} height={125} className="rounded-xl w-[125px] h-[125px]" />
                                                     <div className="ml-4">
                                                         <p className="text-base">{subitem.title}</p>
@@ -123,7 +123,7 @@ export default function Sections() {
 
                         {
                             indexCopy.suported_by.items.map((item, index) => (
-                                <SwiperSlide>  <img src={item.image} width={200} height={200} alt="Spotify" className="object-contain" /></SwiperSlide>
+                                <SwiperSlide key={index}>  <img src={item.image} width={200} height={200} alt="Spotify" className="object-contain" /></SwiperSlide>
                             ))
                         }
                     </Swiper>
@@ -140,8 +140,8 @@ export default function Sections() {
 
                         {
                             indexCopy.news.items.map((item, index) => (
-                                <div className="border border-[var(--color-gray-border)] p-3 rounded-xl flex items-start flex-wrap">
-                                    <img src="./img/news.jpg" alt="Episode 1" width={197} height={158} className="rounded-[10px] lg:w-[197px] w-full h-[158px]" />
+                                <div key={index} className="border border-[var(--color-gray-border)] p-3 rounded-xl flex items-start flex-wrap">
+                                    <img src={item.image} alt="Episode 1" width={197} height={158} className="rounded-[10px] lg:w-[197px] w-full h-[158px]" />
                                     <div className="lg:w-[50%] w-full ml-2">
                                         <p className="text-xl ">{item.title}</p>
                                         <p className="mt-2 text-gray-400">Written by <strong>{item.writer}</strong></p>

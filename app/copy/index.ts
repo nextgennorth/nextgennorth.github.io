@@ -109,16 +109,16 @@ export const indexCopy = {
     suported_by: {
         title: "SUPORTED BY",
         items: [
-            { image: "./img/suportedBy/spotify.png" },
-            { image: "./img/suportedBy/charles.png" },
-            { image: "./img/suportedBy/JPTHOR.png" },
-            { image: "./img/suportedBy/northern.png" },
-            { image: "./img/suportedBy/telstra.png" },
-            { image: "./img/suportedBy/spotify.png" },
-            { image: "./img/suportedBy/charles.png" },
-            { image: "./img/suportedBy/JPTHOR.png" },
-            { image: "./img/suportedBy/northern.png" },
-            { image: "./img/suportedBy/telstra.png" }
+            { image: "./img/suportedby/spotify.png" },
+            { image: "./img/suportedby/charles.png" },
+            { image: "./img/suportedby/JPTHOR.png" },
+            { image: "./img/suportedby/northern.png" },
+            { image: "./img/suportedby/telstra.png" },
+            { image: "./img/suportedby/spotify.png" },
+            { image: "./img/suportedby/charles.png" },
+            { image: "./img/suportedby/JPTHOR.png" },
+            { image: "./img/suportedby/northern.png" },
+            { image: "./img/suportedby/telstra.png" }
         ]
     },
     news: {
@@ -153,7 +153,7 @@ export const indexCopy = {
     PioneerNT: {
         title: "UNLOCK THE FUTURE OF THE <br/>NORTHERN TERRITORY",
         description_1: `Curious about how the Northern Territory is fostering the next generation of leaders, innovators, and changemakers? Our NextGen North Whitepaper dives deep into the vision, mission, and strategic goals behind the podcast that’s shaping the future of the NT. This comprehensive guide offers insights into the local entrepreneurial ecosystem, highlights key projects, and outlines how youth-driven innovation is creating lasting impact across the region.
-        <br>What You’ll Discover Inside:<br><br>`,
+        <br><br>What You’ll Discover Inside:`,
 
         description_2: `<ul className="list-disc mt-4 ml-5 text-base">
                             <li> Our mission to empower and inspire the next generation</li>
