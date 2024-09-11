@@ -2,13 +2,13 @@ export const indexCopy = {
     heroSection: {
         tilte: "NextGenNorth",
         slogan: `BIG IDEAS <br/> — BIGGER IMPACT`,
-        subtitle: "Northern Territory Stories That Inspire",
+        subtitle: "Inspiring Stories from the Northern Territory",
         startButton: {
             text: "START LISTENING",
             url: "#"
         },
-        description1: "We bring you the big ideas, and influential voices that are promoting the generational change of the Northern Territory.",
-        description2: "New Episodes Every Monday and Friday. Join us twice a week for valuable knowledge and perspectives that resonate with Territorians.",
+        description1: "Discover powerful ideas and influential voices driving transformative change in the Northern Territory.",
+        description2: "New Episodes Every Monday & Friday. Tune in twice a week for fresh insights and dynamic perspectives that matter to Territorians.",
     },
     top_episode: {
         title: "TOP EPISODE FOR THIS WEEK",
@@ -152,17 +152,17 @@ export const indexCopy = {
     },
     PioneerNT: {
         title: "UNLOCK THE FUTURE OF THE <br/>NORTHERN TERRITORY",
-        description_1: `Curious about how the Northern Territory is fostering the next generation of leaders, innovators, and changemakers? Our NextGen North Whitepaper dives deep into the vision, mission, and strategic goals behind the podcast that’s shaping the future of the NT. This comprehensive guide offers insights into the local entrepreneurial ecosystem, highlights key projects, and outlines how youth-driven innovation is creating lasting impact across the region.
-        <br><br>What You’ll Discover Inside:`,
+        description_1: `CWant to know how the Northern Territory is nurturing its next wave of leaders, innovators, and changemakers? The NextGen North Whitepaper takes you behind the scenes of the podcast shaping the NT's future. Gain exclusive insights into the local entrepreneurial landscape, discover groundbreaking projects, and learn how youth-led innovation is driving lasting, meaningful change across the region.`,
 
-        description_2: `<ul className="list-disc mt-4 ml-5 text-base">
-                            <li> Our mission to empower and inspire the next generation</li>
-                            <li>  Key interviews and success stories from local innovators</li>
-                            <li> Strategic partnerships and sponsorship opportunities</li>
-                            <li>  Ways to get involved and help shape the NT's future</li>
+        description_2: `<br><br>What You’ll Discover Inside:
+                        <ul className="list-disc mt-4 ml-5 text-base">
+                            <li>Our bold mission to inspire and empower the next generation</li>
+                            <li>In-depth interviews and success stories from Northern Territory's trailblazers</li>
+                            <li>Opportunities for strategic partnerships and sponsorship</li>
+                            <li>Practical ways to get involved and help shape the NT’s future</li>
                         </ul>`
         ,
-        description_3: `Whether you're an entrepreneur, student, or community leader, the NextGen North Whitepaper offers valuable insights and actionable steps to drive positive change. Be part of the conversation, and learn how we can build a thriving, sustainable future for the Northern Territory together.`,
+        description_3: `Whether you're an entrepreneur, student, or community leader, the NextGen North Whitepaper is packed with actionable insights to drive meaningful change. Join the conversation and discover how we can collaboratively build a thriving, sustainable future for the Northern Territory.`,
 
         witepaper: "Download the Whitepaper Now",
         description: "To access your free copy of the NextGen North Whitepaper, simply fill out the form below:",

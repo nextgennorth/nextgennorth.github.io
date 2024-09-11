@@ -36,7 +36,7 @@ export default function Sections() {
                 </div>
                 <div className="lg:w-[350px] w-full">
                     <img src="./img/voice.png" />
-                    <p className="mt-5 text-base" dangerouslySetInnerHTML={{ __html: indexCopy.heroSection.description1 }}></p>
+                    <p className="mt-5 text-base" dangerouslySetInnerHTML={{ __html: indexCopy.heroSection.description2 }}></p>
                 </div>
                 <div>
 
@@ -65,8 +65,8 @@ export default function Sections() {
             </section>
 
             {/* <!-- Podcast Categories --> */}
-            <section className="container mx-auto py-12 px-4 lg:px-0" id="categories">
-                <h3 className="text-[80px]  text-center" dangerouslySetInnerHTML={{ __html: indexCopy.podcasts.title }} style={{ lineHeight: "75px" }}></h3>
+            <section className="container mx-auto py-12 px-4 lg:px-0 mt-5" id="categories">
+                <h3 className="text-[80px]  text-center" dangerouslySetInnerHTML={{ __html: indexCopy.podcasts.title }} style={{ lineHeight: "75px" , marginTop:"150px"}}></h3>
                 <div className="flex justify-center space-x-4 mt-8">
                     <Tabs aria-label="Pills" variant="pills">
                         {
@@ -171,7 +171,7 @@ export default function Sections() {
                         </div>
                         <form className="mt-8 md:mt-0 lg:w-[30%] border border-[var(--color-gray-border)] p-5 rounded-xl">
                             <p className=" text-[20px]">{indexCopy.PioneerNT.witepaper}</p>
-                            <p className="text-base text-gray-400">{indexCopy.PioneerNT.description}</p>
+                            <p className="text-base text-gray-400 my-5">{indexCopy.PioneerNT.description}</p>
                             <label className="text-gray-400">{indexCopy.PioneerNT.full_name}</label>
                             <input type="text" className="block w-full p-2 mt-2 bg-[#26262B] rounded  " />
                             <label className="text-gray-400">{indexCopy.PioneerNT.work_email}</label>
