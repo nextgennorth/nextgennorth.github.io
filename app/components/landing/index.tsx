@@ -10,8 +10,7 @@ export default function Sections() {
     return (
         <>
 
-            <img src="./img/shadow-circle.png" alt="Podcast Host" className="absolute bottom-0 right-0 rounded-[2rem] shadow-lg lg:block hidden" />
-
+<img src="./img/shadow-circle.png" alt="Podcast Host" className="header-shadow absolute right-0 rounded-[2rem] shadow-lg lg:block hidden"/>
             <section className="container mx-auto lg:py-16 flex flex-col-reverse lg:flex-row  justify-between items-center">
                 <div className="p-4 w-full lg:w-[50%]">
                     <p className="text-xl">{indexCopy.heroSection.tilte}</p>
@@ -23,9 +22,9 @@ export default function Sections() {
                     </Link>
                 </div>
                 <div className="mt-10 md:mt-0 relative flex justify-center items-start lg:w-[650px] lg:h-[550px] h-auto w-full flex-wrap" id="main-img-hero">
-                    <img src="./img/user-hosted.jpg" alt="Podcast Host" className="rounded-[2rem] shadow-lg mr-5 hidden lg:block" />
-                    <img src="./img/hero-img.jpg" alt="Podcast Host" className="rounded-[2rem] shadow-lg w-[90%] mx-auto lg:mx-0 lg:w-auto" />
-                    <img src="./img/shadow-img-main.png" alt="Podcast Host" className="rounded-[2rem] shadow-lg absolute top-[100px] z-[-1] lg:right-[-50px] right-0 hidden lg:block" />
+                    <img src="./img/user-hosted.png" alt="Podcast Host" className="rounded-[2rem] shadow-lg mr-5 hidden lg:block" />
+                    <img src="./img/hero-img.png" width={364} height={364} alt="Podcast Host" className="rounded-[2rem] shadow-lg w-[364px] h-[364px] mx-auto lg:mx-0 lg:w-auto" />
+                    <img src="./img/shadow-img-main.png" alt="Podcast Host" className="rounded-[2rem] w-[364px] h-[364px] shadow-lg absolute top-[50px] z-[-1] lg:right-[-50px] right-0 hidden lg:block" />
 
                 </div>
 
@@ -51,7 +50,8 @@ export default function Sections() {
                     {
                         indexCopy.top_episode.items.map((item, index) => (
                             <div key={index} className="border item-top-episode flex lg:flex-col md:flex-row flex-wrap border-[var(--color-gray-border)] p-6 rounded-lg lg:w-[320px] w-full">
-                                <img src={item.image} alt={item.title} width={280} height={153} className="rounded-lg mb-4" />
+                                <img src={item.image} alt={item.title} width={280} height={153} 
+                                    className="rounded-lg mb-4 w-[100%] lg:w-[280px] h-[200px] lg:h-[153px] object-cover" />
                                 <div className="ml-3 lg:ml-0">
                                     <p className="mt-2 text-base">{item.title}</p>
                                     <p className="text-xl  my-2">{item.creator}</p>
@@ -105,7 +105,17 @@ export default function Sections() {
             <section className="w-full mx-auto py-12 px-4 lg:px-0">
                 <h3 className="text-[80px]  text-center">{indexCopy.suported_by.title}</h3>
                 <div className=" mt-20 w-full">
-                    <Swiper
+                    <div className="slider-container">
+                        <ul className="slider">
+                                {
+                                    indexCopy.suported_by.items.map((item, index) => (
+                                        <li className="slider__slide flex justify-center p-3"> <img src={item.image}  alt="Spotify" className="object-contain" /></li>
+                                    ))
+                                }
+                          
+                        </ul>
+                    </div>
+                    {/* <Swiper
                         spaceBetween={10}
                         slidesPerView={5}
                         autoplay={{
@@ -127,7 +137,7 @@ export default function Sections() {
                                 <SwiperSlide key={index}>  <img src={item.image} width={200} height={200} alt="Spotify" className="object-contain" /></SwiperSlide>
                             ))
                         }
-                    </Swiper>
+                    </Swiper> */}
 
 
                 </div>
@@ -142,7 +152,8 @@ export default function Sections() {
                         {
                             indexCopy.news.items.map((item, index) => (
                                 <div key={index} className="border border-[var(--color-gray-border)] p-3 rounded-xl flex items-start">
-                                    <img src={item.image} alt="Episode 1" width={197} height={158} className="rounded-[10px] lg:w-[197px] w-[150px]  lg:h-[158px] h-[150px]" /> 
+                                    <img src={item.image} alt="Episode 1" width={197} height={158} 
+                                    className="rounded-[10px] w-[197px] h-[158px]" /> 
                                     <div className="w-[50%] ml-2">
                                         <p className="text-[18px] overflow-hidden h-[85px]">{item.title}</p>
                                         <p className="mt-2 text-gray-400">Written by <strong>{item.writer}</strong></p>
