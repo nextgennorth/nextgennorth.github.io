@@ -5,6 +5,7 @@ import { Navigation, Pagination, Scrollbar, A11y, Autoplay } from 'swiper/module
 import { indexCopy } from "@/app/copy";
 import 'swiper/css';
 import { COMPILER_INDEXES } from "next/dist/shared/lib/constants";
+import Link from "next/link";
 export default function Sections() {
     return (
         <>
@@ -12,14 +13,14 @@ export default function Sections() {
             <img src="./img/shadow-circle.png" alt="Podcast Host" className="absolute bottom-0 right-0 rounded-[2rem] shadow-lg lg:block hidden" />
 
             <section className="container mx-auto lg:py-16 flex flex-col-reverse lg:flex-row  justify-between items-center">
-                <div className="p-4">
+                <div className="p-4 w-full lg:w-[50%]">
                     <p className="text-xl">{indexCopy.heroSection.tilte}</p>
                     <h2 className="lg:text-[120px] text-[60px]" dangerouslySetInnerHTML={{ __html: indexCopy.heroSection.slogan }} style={{lineHeight:"122px"}}></h2>
                     <p className="mt-4 text-lg">{indexCopy.heroSection.subtitle}</p>
-                    <button className="mt-6 px-6 py-3 flex items-center border border-[var(--color-orange-custom)] text-white  rounded-lg">
+                    <Link href={indexCopy.heroSection.startButton.url} className="mt-6 px-6 py-3 float-start flex items-center border border-[var(--color-orange-custom)] text-white  rounded-lg">
                         {indexCopy.heroSection.startButton.text}
                         <img src="./img/angle-circle-right.png" alt="arrow" className="ml-2 -mr-1 w-4 h-4" />
-                    </button>
+                    </Link>
                 </div>
                 <div className="mt-10 md:mt-0 relative flex justify-center items-start lg:w-[650px] lg:h-[550px] h-auto w-full flex-wrap" id="main-img-hero">
                     <img src="./img/user-hosted.jpg" alt="Podcast Host" className="rounded-[2rem] shadow-lg mr-5 hidden lg:block" />
@@ -136,14 +137,14 @@ export default function Sections() {
                 {/* <!-- News --> */}
                 <section className="container mx-auto py-12 px-4 lg:px-0">
                     <h3 className="text-[80px]  text-start">{indexCopy.news.title}</h3>
-                    <div className="grid grid-cols-1 lg:grid-cols-3 md:grid-col gap-8 mt-8">
+                    <div className="grid grid-cols-1 lg:grid-cols-3 md:grid-cols-2 md:grid-col gap-8 mt-8">
 
                         {
                             indexCopy.news.items.map((item, index) => (
-                                <div key={index} className="border border-[var(--color-gray-border)] p-3 rounded-xl flex items-start flex-wrap">
-                                    <img src={item.image} alt="Episode 1" width={197} height={158} className="rounded-[10px] lg:w-[197px] w-full h-[158px]" />
-                                    <div className="lg:w-[50%] w-full ml-2">
-                                        <p className="text-xl ">{item.title}</p>
+                                <div key={index} className="border border-[var(--color-gray-border)] p-3 rounded-xl flex items-start">
+                                    <img src={item.image} alt="Episode 1" width={197} height={158} className="rounded-[10px] lg:w-[197px] w-[150px]  lg:h-[158px] h-[150px]" /> 
+                                    <div className="w-[50%] ml-2">
+                                        <p className="text-[18px] overflow-hidden h-[85px]">{item.title}</p>
                                         <p className="mt-2 text-gray-400">Written by <strong>{item.writer}</strong></p>
                                         <span className="block mt-4 text-gray-400">{item.date}</span>
                                     </div>
@@ -162,32 +163,32 @@ export default function Sections() {
                         <div className="lg:w-[50%] mb-4">
 
                             <h3 className="text-[80px] " dangerouslySetInnerHTML={{ __html: indexCopy.PioneerNT.title }} style={{ lineHeight: "75px" }}></h3>
-                            <p className="mt-4 text-base" dangerouslySetInnerHTML={{ __html: indexCopy.PioneerNT.description_1 }}>
+                            <p className="mt-4 text-base text-[#EEEEF0]" dangerouslySetInnerHTML={{ __html: indexCopy.PioneerNT.description_1 }}>
                             </p>
-                            <p className="text-base">{indexCopy.PioneerNT.description_2.title}</p>
-                            <ul className="list-disc mt-4 ml-5 text-base">
+                            <p className="text-base text-[#EEEEF0]">{indexCopy.PioneerNT.description_2.title}</p>
+                            <ul className="list-disc mt-4 ml-5 text-base text-[#EEEEF0]">
                                 {
                                     indexCopy.PioneerNT.description_2.items.map((item, index) => (
                                         <li key={index}>{item}</li>
                                     ))
                                 }
                             </ul>
-                            <p className="mt-4 text-base" dangerouslySetInnerHTML={{ __html: indexCopy.PioneerNT.description_3 }}>
+                            <p className="mt-4 text-base text-[#EEEEF0]" dangerouslySetInnerHTML={{ __html: indexCopy.PioneerNT.description_3 }}>
                             </p>
 
                         </div>
                         <form className="mt-8 md:mt-0 lg:w-[30%] border border-[var(--color-gray-border)] p-5 rounded-xl">
-                            <p className=" text-[20px]">{indexCopy.PioneerNT.witepaper}</p>
-                            <p className="text-base text-gray-400 my-5">{indexCopy.PioneerNT.description}</p>
-                            <label className="text-gray-400">{indexCopy.PioneerNT.full_name}</label>
+                            <p className=" text-[20px] text-[#EEEEF0]">{indexCopy.PioneerNT.witepaper}</p>
+                            <p className="text-base text-[#EEEEF0] my-5">{indexCopy.PioneerNT.description}</p>
+                            <label className="text-[#EEEEF0]">{indexCopy.PioneerNT.full_name}</label>
                             <input type="text" className="block w-full p-2 mt-2 bg-[#26262B] rounded  " />
-                            <label className="text-gray-400">{indexCopy.PioneerNT.work_email}</label>
+                            <label className="text-[#EEEEF0]">{indexCopy.PioneerNT.work_email}</label>
                             <input type="email" className="block w-full p-2 mt-2 bg-[#26262B] rounded " />
-                            <label className="text-gray-400">{indexCopy.PioneerNT.phone_number}</label>
+                            <label className="text-[#EEEEF0]">{indexCopy.PioneerNT.phone_number}</label>
                             <input type="tel" className="block w-full p-2 mt-2 bg-[#26262B] rounded " />
-                            <label className="text-gray-400">{indexCopy.PioneerNT.company}</label>
+                            <label className="text-[#EEEEF0]">{indexCopy.PioneerNT.company}</label>
                             <input type="text" className="block w-full p-2 mt-2 bg-[#26262B] rounded " />
-                            <label className="text-gray-400">{indexCopy.PioneerNT.job_title}</label>
+                            <label className="text-[#EEEEF0]">{indexCopy.PioneerNT.job_title}</label>
                             <input type="text" className="block w-full p-2 mt-2 bg-[#26262B] rounded" />
                             <button className="mt-4 w-full px-6 py-3 bg-orange-500 text-white  rounded-lg">{indexCopy.PioneerNT.button.text}</button>
                         </form>

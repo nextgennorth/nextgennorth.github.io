@@ -21,7 +21,7 @@ export default function Footer() {
                             <ul className="text-gray-500 dark:text-gray-400 font-medium">
                                 {footerCopy["website-map"].map((item, index) => (    
                                     <li key={index} className="mb-4">
-                                        <Link href={item.path} className="hover:underline text-[20px]">{item.title}</Link>
+                                        <Link href={item.path} className="hover:underline text-[20px] text-[#D9D9DE]">{item.title}</Link>
                                     </li>
                                 ))}
                               
@@ -31,13 +31,13 @@ export default function Footer() {
                             <h2 className="mb-6 text-[30px]">CONTACT US</h2>
                             <ul className="text-gray-500 dark:text-gray-400 font-medium">
                                 <li className="mb-4">
-                                    <span className=" text-[20px]">{footerCopy["contactus"].email}</span>
+                                    <span className=" text-[20px] text-[#D9D9DE]">{footerCopy["contactus"].email}</span>
                                 </li>
                                 <li>
-                                    <span className="text-[20px]">{footerCopy["contactus"].mobile}</span>
+                                    <span className="text-[20px] text-[#D9D9DE]">{footerCopy["contactus"].mobile}</span>
                                 </li>
                                 <li>
-                                    <span className="text-[20px]">{footerCopy["contactus"].address}</span>
+                                    <span className="text-[20px] text-[#D9D9DE]">{footerCopy["contactus"].address}</span>
                                 </li>
                             </ul>
                         </div>
