@@ -11,7 +11,7 @@ export default function Header() {
     return (
         <header>
             <nav className="py-2.5 ">
-                <div className="flex flex-wrap justify-between items-center mx-auto container">
+                <div className="flex flex-wrap justify-between items-center mx-auto container px-6 lg:px-0">
                     <Link href="/" className="flex items-center">
                         <Image src="/img/logo.png" width={150} height={150} className="mr-3  sm:h-9 object-contain !w-[90px] !h-[90px]" alt="Flowbite Logo" />
                     </Link>
