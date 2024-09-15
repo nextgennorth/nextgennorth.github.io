@@ -1,4 +1,4 @@
-export const header = {
+export const headerCopy = {
     "navbar": [
         {
             id: 1,
@@ -30,25 +30,25 @@ export const header = {
         {
             id: 1,
             title: "Facebook",
-            path: "https://www.facebook.com/flowbite",
+            path: "https://www.facebook.com/",
             icon: "/img/f.png",
         },
         {
             id: 2,
             title: "Twitter",
-            path: "https://www.twitter.com/flowbite",
+            path: "https://www.twitter.com",
             icon: "/img/x.png",
         },
         {
             id: 3,
             title: "Instagram",      
-            path: "https://www.instagram.com/flowbite",
+            path: "https://www.instagram.com",
             icon: "/img/ins.png",
         },
         {
             id: 4,
             title: "youtube",
-            path: "https://www.youtube.com/channel/UCf5u3m-8-y-c5-1-m3-5",
+            path: "https://www.youtube.com",
             icon: "/img/youtube.png",
         },
     ],

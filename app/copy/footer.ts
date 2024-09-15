@@ -1,4 +1,4 @@
-export const footer = {
+export const footerCopy = {
     "website-map": [
         {
             id: 1,
@@ -25,31 +25,5 @@ export const footer = {
         email: "support@nextgen.com",
         mobile: "(239) 555-0108",
         address: "8502 Preston Rd. Inglewood, Maine 98380"
-    },  
-    "socialMedia": [
-        {
-            id: 1,
-            title: "Facebook",
-            path: "https://www.facebook.com/flowbite",
-            icon: "/img/f.png",
-        },
-        {
-            id: 2,
-            title: "Twitter",
-            path: "https://www.twitter.com/flowbite",
-            icon: "/img/x.png",
-        },
-        {
-            id: 3,
-            title: "Instagram",
-            path: "https://www.instagram.com/flowbite",
-            icon: "/img/ins.png",
-        },
-        {
-            id: 4,
-            title: "youtube",
-            path: "https://www.youtube.com/channel/UCf5u3m-8-y-c5-1-m3-5",
-            icon: "/img/youtube.png",
-        },
-    ],
+    }
 }
