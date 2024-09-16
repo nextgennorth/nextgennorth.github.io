@@ -11,12 +11,12 @@ export default function Sections() {
         <>
 
 <img src="./img/shadow-circle.png" alt="Podcast Host" className="header-shadow absolute right-0 rounded-[2rem] shadow-lg lg:block hidden"/>
-            <section className="container mx-auto lg:py-16 flex flex-col-reverse lg:flex-row  justify-between items-center">
+            <section className="container mx-auto lg:py-16 flex flex-col-reverse lg:flex-row  justify-between items-center" id="home">
                 <div className="p-4 w-full lg:w-[50%]">
                     <p className="text-xl">{indexCopy.heroSection.tilte}</p>
                     <h2 className="lg:text-[120px] text-[60px]" dangerouslySetInnerHTML={{ __html: indexCopy.heroSection.slogan }} style={{lineHeight:"122px"}}></h2>
                     <p className="mt-4 text-lg">{indexCopy.heroSection.subtitle}</p>
-                    <Link href={indexCopy.heroSection.startButton.url} className="mt-6 px-6 py-3 float-start flex items-center border border-[var(--color-orange-custom)] text-white  rounded-lg">
+                    <Link href={indexCopy.heroSection.startButton.url} target={indexCopy.heroSection.startButton.target} className="mt-6 px-6 py-3 float-start flex items-center border border-[var(--color-orange-custom)] text-white  rounded-lg">
                         {indexCopy.heroSection.startButton.text}
                         <img src="./img/angle-circle-right.png" alt="arrow" className="ml-2 -mr-1 w-4 h-4" />
                     </Link>

@@ -17,9 +17,9 @@ export default function Footer() {
                     </div>
                     <div className="flex justify-between items-start w-full lg:pl-20 flex-wrap" id="mobile-menu-2">
                         <div>
-                            <h2 className="mb-6 text-[30px]">Website map</h2>
+                            <h2 className="mb-6 text-[30px]">{footerCopy.title_website_map}</h2>
                             <ul className="text-gray-500 dark:text-gray-400 font-medium">
-                                {footerCopy["website-map"].map((item, index) => (    
+                                {footerCopy.website_map.map((item, index) => (    
                                     <li key={index} className="mb-4">
                                         <Link href={item.path} className="hover:underline text-[20px] text-[#D9D9DE]">{item.title}</Link>
                                     </li>
@@ -28,7 +28,7 @@ export default function Footer() {
                             </ul>
                         </div>
                         <div className="mb-4">
-                            <h2 className="mb-6 text-[30px]">CONTACT US</h2>
+                            <h2 className="mb-6 text-[30px]">{footerCopy.title_contactus}</h2>
                             <ul className="text-gray-500 dark:text-gray-400 font-medium">
                                 <li className="mb-4">
                                     <span className=" text-[20px] text-[#D9D9DE]">{footerCopy["contactus"].email}</span>

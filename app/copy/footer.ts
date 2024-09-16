@@ -1,27 +1,29 @@
 export const footerCopy = {
-    "website-map": [
+    title_website_map: "WEBSITE MAP",
+    website_map: [
         {
             id: 1,
-            title: "HOME",
-            path: "/",
+            title: "Home",
+            path: "#home",
         },
         {
             id: 2,
-            title: "CATEGORIES",
-            path: "/about",
+            title: "Categories",
+            path: "#categories",
         },
         {
             id: 3,
-            title: "NEWS",
+            title: "News",
             path: "#news",
         },
         {
             id: 3,
-            title: "WHITEPAPER",
+            title: "Whitepaper",
             path: "#whitepaper",
         },
     ],
-    "contactus": {
+    title_contactus: "CONTACT US",
+    contactus: {
         email: "support@nextgen.com",
         mobile: "(239) 555-0108",
         address: "8502 Preston Rd. Inglewood, Maine 98380"
