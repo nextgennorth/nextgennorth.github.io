@@ -5,7 +5,8 @@ export const indexCopy = {
         subtitle: "Inspiring Stories from the Northern Territory",
         startButton: {
             text: "START LISTENING",
-            url: "#"
+            url: "https://www.youtube.com/channel/UCloYAgZwTVvb0z8jB9jEkEA/videos",
+            target: "_blank"
         },
         description1: "Discover powerful ideas and influential voices driving transformative change in the Northern Territory.",
         description2: "New Episodes Every Monday & Friday. Tune in twice a week for fresh insights and dynamic perspectives that matter to Territorians.",
@@ -155,9 +156,11 @@ export const indexCopy = {
         description_1: `Curious about how the Northern Territory is fostering the next generation of leaders, innovators, and changemakers? Our NextGen North Whitepaper dives deep into the vision, mission, and strategic goals behind the podcast that’s shaping the future of the NT. This comprehensive guide offers insights into the local entrepreneurial ecosystem, highlights key projects, and outlines how youth-driven innovation is creating lasting impact across the region.
         <br><br>`,
 
-        description_2: {title:"What You’ll Discover Inside:",items:["Our bold mission to inspire and empower the next generation",
-            "In-depth interviews and success stories from Northern Territory's trailblazers",
-            "Opportunities for strategic partnerships and sponsorship", "Practical ways to get involved and help shape the NT’s future"]},
+        description_2: {
+            title: "What You’ll Discover Inside:", items: ["Our bold mission to inspire and empower the next generation",
+                "In-depth interviews and success stories from Northern Territory's trailblazers",
+                "Opportunities for strategic partnerships and sponsorship", "Practical ways to get involved and help shape the NT’s future"]
+        },
 
         description_3: `Whether you're an entrepreneur, student, or community leader, the NextGen North Whitepaper is packed with actionable insights to drive meaningful change. Join the conversation and discover how we can collaboratively build a thriving, sustainable future for the Northern Territory.`,
 
