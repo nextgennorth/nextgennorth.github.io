@@ -1,6 +1,6 @@
 export const indexCopy = {
     heroSection: {
-        tilte: "NextGenNorth",
+        title: "NextGenNorth",
         slogan: `BIG IDEAS <br/> — BIGGER IMPACT`,
         subtitle: "Inspiring Stories from the Northern Territory",
         startButton: {
@@ -16,7 +16,7 @@ export const indexCopy = {
         items: [
             {
                 title: "Next Gen North Episode #31",
-                creator: "Dr Sabtir Aulakh",
+                creator: "Dr. Sabtir Aulakh",
                 time: "54:00",
                 url: "#",
                 image: "./img/episods/episod1.png"
@@ -43,7 +43,7 @@ export const indexCopy = {
         contents: [
             {
                 title: "Next Gen North Episode #31",
-                creator: "Dr Sabtir Aulakh",
+                creator: "Dr. Sabtir Aulakh",
                 time: "56:25",
                 Image: "./img/podcast/DrSatbirAulakh.png",
                 url: "#",
@@ -86,7 +86,7 @@ export const indexCopy = {
             },
             {
                 title: "Next Gen North Episode #31",
-                creator: "Dr Satbir Aulakh",
+                creator: "Dr. Satbir Aulakh",
                 time: "2:10:25",
                 Image: "./img/podcast/DrSatbirAulakh.png",
                 categories: ["All", "Technology"],
@@ -108,7 +108,7 @@ export const indexCopy = {
         ]
     },
     suported_by: {
-        title: "SUPORTED BY",
+        title: "SUPPORTED BY",
         items: [
             { image: "./img/suportedby/spotify.png" },
             { image: "./img/suportedby/charles.png" },
@@ -153,7 +153,7 @@ export const indexCopy = {
     },
     PioneerNT: {
         title: "UNLOCK THE FUTURE OF THE <br/>NORTHERN TERRITORY",
-        description_1: `Curious about how the Northern Territory is fostering the next generation of leaders, innovators, and changemakers? Our NextGen North Whitepaper dives deep into the vision, mission, and strategic goals behind the podcast that’s shaping the future of the NT. This comprehensive guide offers insights into the local entrepreneurial ecosystem, highlights key projects, and outlines how youth-driven innovation is creating lasting impact across the region.
+        description_1: `Curious about how the Northern Territory is fostering the next generation of leaders, innovators, and changemakers? Our NextGen North Whitepaper dives deep into the vision, mission, and strategic goals behind the podcast shaping the NT’s future. This comprehensive guide offers insights into the local entrepreneurial ecosystem, highlights key projects, and outlines how youth-driven innovation is creating lasting impact across the region.
         <br><br>`,
 
         description_2: {
@@ -164,7 +164,7 @@ export const indexCopy = {
 
         description_3: `Whether you're an entrepreneur, student, or community leader, the NextGen North Whitepaper is packed with actionable insights to drive meaningful change. Join the conversation and discover how we can collaboratively build a thriving, sustainable future for the Northern Territory.`,
 
-        witepaper: "Download the Whitepaper Now",
+        whitepaper: "Download the Whitepaper Now",
         description: "To access your free copy of the NextGen North Whitepaper, simply fill out the form below:",
         full_name: "Full Name",
         work_email: "Work Email",
