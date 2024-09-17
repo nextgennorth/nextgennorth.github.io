@@ -13,7 +13,7 @@ export default function Sections() {
 <img src="./img/shadow-circle.png" alt="Podcast Host" className="header-shadow absolute right-0 rounded-[2rem] shadow-lg lg:block hidden"/>
             <section className="container mx-auto lg:py-16 flex flex-col-reverse lg:flex-row  justify-between items-center" id="home">
                 <div className="p-4 w-full lg:w-[50%]">
-                    <p className="text-xl">{indexCopy.heroSection.tilte}</p>
+                    <p className="text-xl">{indexCopy.heroSection.title}</p>
                     <h2 className="lg:text-[120px] text-[60px]" dangerouslySetInnerHTML={{ __html: indexCopy.heroSection.slogan }} style={{lineHeight:"122px"}}></h2>
                     <p className="mt-4 text-lg">{indexCopy.heroSection.subtitle}</p>
                     <Link href={indexCopy.heroSection.startButton.url} target={indexCopy.heroSection.startButton.target} className="mt-6 px-6 py-3 float-start flex items-center border border-[var(--color-orange-custom)] text-white  rounded-lg">
@@ -189,7 +189,7 @@ export default function Sections() {
 
                         </div>
                         <form className="mt-8 md:mt-0 lg:w-[30%] border border-[var(--color-gray-border)] p-5 rounded-xl">
-                            <p className=" text-[20px] text-[#EEEEF0]">{indexCopy.PioneerNT.witepaper}</p>
+                            <p className=" text-[20px] text-[#EEEEF0]">{indexCopy.PioneerNT.whitepaper}</p>
                             <p className="text-base text-[#EEEEF0] my-5">{indexCopy.PioneerNT.description}</p>
                             <label className="text-[#EEEEF0]">{indexCopy.PioneerNT.full_name}</label>
                             <input type="text" className="block w-full p-2 mt-2 bg-[#26262B] rounded  " />
