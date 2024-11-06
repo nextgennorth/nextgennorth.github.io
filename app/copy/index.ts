@@ -171,6 +171,6 @@ export const indexCopy = {
         phone_number: "Phone Number",
         company: "Company/Organization (Optional)",
         job_title: "Job Title",
-        button: { text: "Download New", url: "#" }
+        button: { text: "Download Now", url: "#" }
     }
 }
