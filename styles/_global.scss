@@ -238,6 +238,8 @@ div[role="tablist"] {
     .wrapper {
       position: relative;
       padding-left: 331px !important;
+      width: 100%;
+      min-height: 238px;
       .image {
         position: absolute;
         top: 20px;
@@ -280,6 +282,7 @@ div[role="tablist"] {
       width: 48%;
       gap: 10px !important;
       padding-left: 150px !important;
+      min-height: 127px;
       .image {
         position: absolute;
         width: 120px !important;
