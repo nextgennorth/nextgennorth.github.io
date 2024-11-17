@@ -1,0 +1,12 @@
+@use "sass:math";
+
+@use "tailwindcss/base";
+@use "tailwindcss/components";
+@use "tailwindcss/utilities";
+@use "_variables";
+@use "_global";
+
+@use "@/components/layouts/default";
+
+@use "@/components/pages/home";
+@use "@/components/pages/article";

@@ -1,0 +1,78 @@
+@use "@/styles/variables" as *;
+
+.article-page {
+  .container {
+    padding: rem(16);
+    margin: 0 auto;
+    .page-title {
+      font-family: var(--font-league-gothic);
+      font-size: rem(40);
+      line-height: rem(40);
+    }
+    .image {
+      width: 100%;
+      margin-top: rem(20);
+      border-radius: rem(10);
+    }
+    .article-content {
+      display: flex;
+      flex-direction: column;
+      margin-top: rem(20);
+      gap: rem(20);
+      .info {
+        display: flex;
+        flex-direction: column;
+        color: rgba(183, 184, 194, 1);
+        margin-top: rem(10);
+        span {
+          font-size: rem(16);
+        }
+        .author {
+          font-size: rem(20) !important;
+          font-weight: bold;
+        }
+        .date {
+          font-size: rem(16) !important;
+        }
+      }
+      .item {
+        margin-bottom: rem(30);
+        .title {
+          font-size: rem(24);
+          font-weight: 700;
+          line-height: rem(22);
+          color: rgba(247, 247, 248, 1);
+        }
+        p {
+          font-size: rem(18);
+          margin-top: rem(10);
+          text-align: justify;
+          color: rgba(247, 247, 248, 1);
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: rem(768)) {
+  .article-page {
+    .container {
+      text-align: center;
+      .page-title {
+        font-size: rem(70) !important;
+        line-height: rem(70);
+      }
+      .article-content {
+        text-align: left;
+        flex-direction: row !important;
+        margin-top: rem(60) !important;
+        .info {
+          width: 100% !important;
+        }
+        .item {
+          width: 100% !important;
+        }
+      }
+    }
+  }
+}
