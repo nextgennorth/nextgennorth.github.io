@@ -203,29 +203,6 @@ export default function Component() {
               ))}
             </ul>
           </div>
-          {/* <Swiper
-                        spaceBetween={10}
-                        slidesPerView={5}
-                        autoplay={{
-                            delay: 2500,
-                        }}
-                        modules={[Autoplay]}
-                        breakpoints={{
-
-                            320: {
-                                slidesPerView: 2,
-                            },
-                            768: {
-                                slidesPerView: 5,
-                            },
-                        }}>
-
-                        {
-                            content.suported_by.items.map((item, index) => (
-                                <SwiperSlide key={index}>  <img src={item.image} width={200} height={200} alt="Spotify" className="object-contain" /></SwiperSlide>
-                            ))
-                        }
-                    </Swiper> */}
         </div>
       </section>
 
@@ -261,13 +238,15 @@ export default function Component() {
               .filter((item) => item.id != 1)
               .map((item, index) => (
                 <div className="wrapper" key={index}>
-                  <Image
-                    width={544}
-                    height={429}
-                    src={item.image_title}
-                    alt=""
-                    className="image"
-                  />
+                  <a href={"article/" + item.id}>
+                    <Image
+                      width={544}
+                      height={429}
+                      src={item.image_title}
+                      alt=""
+                      className="image"
+                    />
+                  </a>
                   <a href={"article/" + item.id}>
                     <span className="title">{item.title}</span>
                   </a>
