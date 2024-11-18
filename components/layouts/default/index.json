@@ -8,17 +8,17 @@
     {
       "id": 2,
       "title": "CATEGORIES",
-      "path": "#categories"
+      "path": "/#categories"
     },
     {
       "id": 3,
       "title": "NEWS",
-      "path": "#news"
+      "path": "/#news"
     },
     {
-      "id": 3,
+      "id": 4,
       "title": "WHITEPAPER",
-      "path": "#whitepaper"
+      "path": "/#whitepaper"
     }
   ],
   "logo": {
@@ -62,17 +62,17 @@
     {
       "id": 2,
       "title": "Categories",
-      "path": "#categories"
+      "path": "/#categories"
     },
     {
       "id": 3,
       "title": "News",
-      "path": "#news"
+      "path": "/#news"
     },
     {
-      "id": 3,
+      "id": 4,
       "title": "Whitepaper",
-      "path": "#whitepaper"
+      "path": "/#whitepaper"
     }
   ],
   "title_contactus": "CONTACT US",
