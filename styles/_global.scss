@@ -275,11 +275,9 @@ div[role="tablist"] {
   }
   .article {
     margin-top: 20px !important;
-    justify-content: space-between;
     flex-wrap: wrap !important;
-    align-items: flex-start;
     .wrapper {
-      width: 48%;
+      width: 48.5%;
       gap: 10px !important;
       padding-left: 150px !important;
       min-height: 127px;
@@ -303,30 +301,7 @@ div[role="tablist"] {
   }
 }
 
-@media (min-width: 1200px) {
-
-  .article-first {
-    .wrapper {
-      padding-left: 536px !important;
-      .image {
-        width: 500px !important;
-      }
-      .title {
-        font-size: 43px !important;
-        line-height: 48px !important;
-      }
-    }
-  }
-
-  .article {
-    .wrapper {
-      width: 31% !important;
-    }
-  }
-}
-
 @media (min-width: 1024px) {
-
   .article-first {
     .wrapper {
       padding-left: 590px !important;
@@ -342,8 +317,46 @@ div[role="tablist"] {
   }
 
   .article {
+    gap: 27px !important;
+  }
+}
+
+@media (min-width: 1200px) {
+  .article-first {
     .wrapper {
-      width: 31% !important;
+      padding-left: 536px !important;
+      .image {
+        width: 500px !important;
+      }
+      .title {
+        font-size: 43px !important;
+        line-height: 48px !important;
+      }
+    }
+  }
+
+  .article {
+    gap: 28px !important;
+    .wrapper {
+      width: 31.4% !important;
+    }
+  }
+}
+
+@media (min-width: 1280px){
+  .article {
+    gap: 30px !important;
+    .wrapper {
+      width: 31.7% !important;
+    }
+  }
+}
+
+@media (min-width: 1536px){
+  .article {
+    gap: 29px !important;
+    .wrapper {
+      width: 32% !important;
     }
   }
 }
