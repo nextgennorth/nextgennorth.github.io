@@ -51,7 +51,7 @@ export default function Component() {
                 {previous ? (
                   <a href={"/article/" + previous.id}>
                     <div className="previous">
-                    <p className="key"><img src="/images/previous.svg"/> <span>previous Article</span></p>
+                    <p className="key"><img src="/images/previous.svg"/> <span>Previous Article</span></p>
                       <Image
                         className="img"
                         width={300}
