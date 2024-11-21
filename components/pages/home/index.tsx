@@ -224,8 +224,8 @@ export default function Component() {
                   />
                   <span className="title">{article.title}</span>
                   <span className="author">
-                    <span className="caption">Written by </span>
-                    {article.written_by}
+                    <span className="caption">Published By </span>
+                    {article.published_by}
                   </span>
                   <span className="date">{article.date}</span>
                 </div>
@@ -251,8 +251,8 @@ export default function Component() {
                     <span className="title">{item.title}</span>
                   </a>
                   <span className="author">
-                    <span className="caption">Written by </span>
-                    {item.written_by}
+                    <span className="caption">Published By </span>
+                    {item.published_by}
                   </span>
                   <span className="date">{item.date}</span>
                 </div>
@@ -288,7 +288,7 @@ export default function Component() {
                     {item.title}
                   </p>
                   <p className="mt-2 text-gray-400">
-                    Written by <strong>{item.writer}</strong>
+                    Published By <strong>{item.writer}</strong>
                   </p>
                   <span className="block mt-4 text-gray-400">{item.date}</span>
                 </div>
@@ -332,7 +332,7 @@ export default function Component() {
                 }}
               ></p>
             </div>
-            <form className="mt-8 md:mt-0 lg:w-[30%] border border-[var(--color-gray-border)] p-5 rounded-xl">
+            <form action={content.PioneerNT.button.url} target="_blank" className="mt-8 md:mt-0 lg:w-[30%] border border-[var(--color-gray-border)] p-5 rounded-xl">
               <p className=" text-[20px] text-[#EEEEF0]">
                 {content.PioneerNT.whitepaper}
               </p>

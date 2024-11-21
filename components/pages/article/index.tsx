@@ -33,8 +33,8 @@ export default function Component() {
           />
           <div className="article-content">
             <div className="info">
-              <span>Written by</span>
-              <span className="author">{article.written_by}</span>
+              <span>Published By</span>
+              <span className="author">{article.published_by}</span>
               <span>{article.date}</span>
             </div>
             <div className="text">
@@ -60,7 +60,7 @@ export default function Component() {
                         alt="Next"
                       />
                       <p className="title">{previous.title}</p>
-                      <p className="author">Written by <span>{previous.written_by}</span></p>
+                      <p className="author">Published By <span>{previous.published_by}</span></p>
                       <p className="date">{previous.date}</p>
                     </div>
                   </a>
@@ -82,7 +82,7 @@ export default function Component() {
                         alt="Next"
                       />
                       <p className="title">{next.title}</p>
-                      <p className="author">Written by <span>{next.written_by}</span>
+                      <p className="author">Published By <span>{next.published_by}</span>
                       </p>
                       <p className="date">{next.date}</p>
                     </div>
