@@ -207,7 +207,7 @@ export default function Component() {
       </section>
 
       {/* <!-- article --> */}
-      <section className="w-ful relative mt-40" id="article">
+      <section className="w-ful relative mt-40" id="articles">
         <div className="container mx-auto py-12 px-4">
           <h3 className="text-[80px] text-start text-uppercase">ARTICLES</h3>
 
