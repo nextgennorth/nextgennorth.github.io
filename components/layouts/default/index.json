@@ -1,0 +1,94 @@
+{
+  "navbar": [
+    {
+      "id": 1,
+      "title": "HOME",
+      "path": "/"
+    },
+    {
+      "id": 2,
+      "title": "CATEGORIES",
+      "path": "/#categories"
+    },
+    {
+      "id": 3,
+      "title": "ARTICLES",
+      "path": "/#articles"
+    },
+    {
+      "id": 4,
+      "title": "NEWS",
+      "path": "/#news"
+    },
+    {
+      "id": 5,
+      "title": "WHITEPAPER",
+      "path": "/#whitepaper"
+    }
+  ],
+  "logo": {
+    "src": "/images/logo.png",
+    "url": "https://flowbite.com",
+    "alt": ""
+  },
+  "socialMedia": [
+    {
+      "id": 1,
+      "title": "Facebook",
+      "path": "https://www.facebook.com/NextGenNorth",
+      "icon": "/images/f.png"
+    },
+    {
+      "id": 2,
+      "title": "Twitter",
+      "path": "https://x.com/NextGenNorth",
+      "icon": "/images/x.png"
+    },
+    {
+      "id": 3,
+      "title": "Instagram",
+      "path": "https://www.instagram.com/nextgennorth_au",
+      "icon": "/images/ins.png"
+    },
+    {
+      "id": 4,
+      "title": "youtube",
+      "path": "https://www.youtube.com/channel/UCloYAgZwTVvb0z8jB9jEkEA/videos",
+      "icon": "/images/youtube.png"
+    }
+  ],
+  "title_website_map": "WEBSITE MAP",
+  "website_map": [
+    {
+      "id": 1,
+      "title": "Home",
+      "path": "/"
+    },
+    {
+      "id": 2,
+      "title": "Categories",
+      "path": "/#categories"
+    },
+    {
+      "id": 3,
+      "title": "Articles",
+      "path": "/#articles"
+    },
+    {
+      "id": 4,
+      "title": "News",
+      "path": "/#news"
+    },
+    {
+      "id": 5,
+      "title": "Whitepaper",
+      "path": "/#whitepaper"
+    }
+  ],
+  "title_contactus": "CONTACT US",
+  "contactus": {
+    "email": "support@nextgen.com",
+    "mobile": "(239) 555-0108",
+    "address": "8502 Preston Rd. Inglewood, Maine 98380"
+  }
+}
